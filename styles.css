@@ -11,7 +11,7 @@ html, body {
 
 body { 
     height: 100vh;
-    border: solid yellow;
+    /* border: solid yellow; */
 }
 img { 
     height: 120px;
@@ -107,10 +107,19 @@ svg {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 30px;
+    gap: 50px;
     padding-right: 40px;
 }
 
+.topbar-top-right svg { 
+    width: 24px;
+    height: 24px;
+}
+
+.topbar-top-right > #profile-name { 
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
 .topbar-bottom { 
     flex: 1;
@@ -178,7 +187,7 @@ svg {
 .main { 
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    border: solid blue;
+    /* border: solid blue; */
     background-color: #E1E7EF;
 
     display: grid;
@@ -191,10 +200,52 @@ svg {
     grid-row: 1 / 3;
 }
 
+#project-title { 
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.card-main { 
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: #F0B429 solid 6px;
+    
+}
+
+.projects-card-all { 
+    padding-left: 10px;
+    display: grid;
+    gap: 20px;
+    /* border: solid green; */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    height: 100%;
+}
+
+
 .main-announcements { 
     grid-column: 2 / 3;
-    grid-row: 1 / 2;;
+    grid-row: 1 / 2;
 }
+
+.announcements-card-all { 
+    /* border: solid black; */
+
+}
+
+.card-announcement { 
+    margin: 10px 30px;
+    padding: 20px 0px;
+} 
+
+#card-line { 
+    
+    border-bottom: 1px solid grey;
+}
+
+
+
 
 .main-trending { 
     grid-column: 2 / 3;
@@ -202,11 +253,55 @@ svg {
 }
 
 
+
+.card-main svg { 
+    width: 24px;
+    height: 24px;;
+    fill: #F0B429;
+    margin-right: 10px;
+}
+
+
+.announcements-card-all { 
+    background-color: white;
+
+    /* border: solid red; */
+    
+}
+
+.trending-card-all { 
+    background-color: white;
+    /* border: solid green; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 0px 30px;
+}
+
+.card-trending { 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
 /*  */
 
+.title-style-1 { 
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.title { 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 .profile-pic-small { 
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
 }
 
