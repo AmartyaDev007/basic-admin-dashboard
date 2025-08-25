@@ -197,7 +197,7 @@ svg {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 30px;
+    gap: 0px 30px;
 }
 
 .main-projects { 
@@ -216,8 +216,11 @@ svg {
     border-radius: 10px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
     border-left: #F0B429 solid 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
 
-    
 }
 
 .projects-card-all { 
@@ -226,16 +229,16 @@ svg {
     gap: 20px;
     /* border: solid green; */
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-
+    
 }
 
 
 .main-announcements { 
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    border: solid red;
     
-    
-    
+
 }
 
 .announcements-card-all { 
@@ -243,11 +246,11 @@ svg {
     margin: 0px 20px;
     border-radius: 10px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-
+    
 }
 
 .card-announcement { 
-    margin: 5px 30px;
+    margin: 0px 30px;
     padding: 10px 0px;
 } 
 
@@ -286,9 +289,9 @@ svg {
     /* border: solid green; */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     justify-content: flex-start;
-    height: 100%;
+    height: auto;
     padding: 30px 30px;
     border-radius: 10px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
@@ -302,6 +305,13 @@ svg {
     
 }
 
+.main-project-card-icons-group { 
+    padding: 0px auto;
+    
+    display: flex;
+    justify-content: flex-end;
+    
+}
 
 /*  */
 
@@ -316,8 +326,8 @@ svg {
 }
 
 .profile-pic-small { 
-    width: 48px;
-    height: 48px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
 }
 
